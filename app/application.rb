@@ -29,7 +29,6 @@ class Application
         resp.write "added #{add_item}"
       else
         resp.write "We don't have that item"
-        binding.pry
       end
       resp.write "Path Not Found"
     end
