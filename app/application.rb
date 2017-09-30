@@ -24,7 +24,8 @@ class Application
       end
     elsif req.path.match(/add/)
       add_item = req.params["item"]
-      if @@items.include?(search_term)
+      if @@items.include?(add_item)
+        @@cart << 
         resp.write "added #{item}"
       else
         resp.write "We don't have that item"
