@@ -22,7 +22,7 @@ class Application
       else
         resp.write "Your cart is empty"
       end
-    elsif req.path.match(/add)
+    elsif req.path.match(/add/)
 
 
 
